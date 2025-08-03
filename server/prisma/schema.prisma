@@ -1,0 +1,29 @@
+// /backend/prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Deal {
+  id          Int      @id @default(autoincrement())
+  name        String   @db.VarChar(255)
+  contactName String   @map("contact_name") @db.VarChar(255)
+  company     String   @db.VarChar(255)
+  stage       Stage    @default(New)
+  value       Decimal  @db.Decimal(10, 2)
+  createdAt   DateTime @default(now()) @map("created_at")
+  closeDate   DateTime? @map("close_date") @db.Date
+
+  @@map("deals")
+}
+
+enum Stage {
+  New
+  In_Progress @map("In Progress")
+  Won
+  Lost
+}
