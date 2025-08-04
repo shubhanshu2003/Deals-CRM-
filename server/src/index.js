@@ -9,9 +9,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors({
-  origin: '*',
-  credentials: false, // no credentials allowed with '*'
+  origin: 'https://your-frontend-domain.com',
+  credentials: true,
 }));
+
 app.use(express.json());
 
 
