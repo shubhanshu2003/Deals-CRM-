@@ -1,7 +1,7 @@
-// /frontend/src/components/DealsList.jsx
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Chip } from '@mui/material';
 import moment from 'moment';
 
+// Maps deal stages to Material-UI Chip color variants for visual distinction
 const getStageColor = (stage) => {
     switch (stage) {
         case 'New':
@@ -17,6 +17,7 @@ const getStageColor = (stage) => {
     }
 };
 
+// Formats stage string to replace underscores with spaces for better readability
 const formatStageName = (stage) => stage.replace('_', ' ');
 
 const DealsList = ({ deals }) => {
@@ -40,14 +41,16 @@ const DealsList = ({ deals }) => {
                             <TableCell>{deal.contactName}</TableCell>
                             <TableCell>{deal.company}</TableCell>
                             <TableCell>
+                                {/* Show the stage label with an appropriate color */}
                                 <Chip
                                     label={formatStageName(deal.stage)}
                                     color={getStageColor(deal.stage)}
                                     size="small"
                                 />
                             </TableCell>
-                            {/* CORRECTED LINE: convert the value to a number before calling toFixed */}
+                            {/* Format deal value as currency */}
                             <TableCell>{`$${parseFloat(deal.value).toFixed(2)}`}</TableCell>
+                            {/* Format close date if present, else show 'N/A' */}
                             <TableCell>
                                 {deal.closeDate ? moment(deal.closeDate).format('YYYY-MM-DD') : 'N/A'}
                             </TableCell>

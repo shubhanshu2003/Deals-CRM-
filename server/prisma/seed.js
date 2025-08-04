@@ -1,5 +1,5 @@
-// /backend/prisma/seed.js
-const { PrismaClient } = require('@prisma/client');
+
+const { PrismaClient } = require ('@prisma/client');
 
 const prisma = new PrismaClient();
 
@@ -9,37 +9,37 @@ async function main() {
 
   const deals = [
     {
-      name: 'Website Redesign for Acme Inc.',
-      contactName: 'John Doe',
-      company: 'Acme Inc.',
-      stage: 'In_Progress',
-      value: 15000.00,
-      closeDate: new Date('2025-12-31'),
+      "name": 'Website Redesign for Acme Inc.',
+      "contactName": 'John Doe',
+      "company": 'Acme Inc.',
+      "stage": 'In_Progress',
+      "value": 15000.00,
+      "closeDate": new Date('2025-12-31'),
     },
     {
-      name: 'Server Migration for Beta Corp.',
-      contactName: 'Jane Smith',
-      company: 'Beta Corp.',
-      stage: 'New',
-      value: 2500.00,
-      closeDate: new Date('2025-11-15'),
+      "name": 'Server Migration for Beta Corp.',
+      "contactName": 'Jane Smith',
+      "company": 'Beta Corp.',
+      "stage": 'New',
+      "value": 2500.00,
+      "closeDate": new Date('2025-11-15'),
     },
-    // Add more deal data here...
+    
     {
-      name: 'CRM Implementation for Gamma Ltd.',
-      contactName: 'Peter Jones',
-      company: 'Gamma Ltd.',
-      stage: 'Won',
-      value: 50000.00,
-      closeDate: new Date('2025-06-20'),
+      "name": 'CRM Implementation for Gamma Ltd.',
+      "contactName": 'Peter Jones',
+      "company": 'Gamma Ltd.',
+      "stage": 'Won',
+      "value": 50000.00,
+      "closeDate": new Date('2025-06-20'),
     },
     {
-      name: 'Marketing Campaign for Delta LLC',
-      contactName: 'Maria Rodriguez',
-      company: 'Delta LLC',
-      stage: 'Lost',
-      value: 8000.00,
-      closeDate: new Date('2025-07-01'),
+      "name": 'Marketing Campaign for Delta LLC',
+      "contactName": 'Maria Rodriguez',
+      "company": 'Delta LLC',
+      "stage": 'Lost',
+      "value": 8000.00,
+      "closeDate": new Date('2025-07-01'),
     },
   {
     "name": "Cloud Migration for Tech Solutions",

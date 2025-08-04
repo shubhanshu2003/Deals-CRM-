@@ -53,6 +53,12 @@ You can access the live application using the following links:
 #### 3. Search by "Company Name"
 ![Search by Company Name](ScreenShot/Company%20Name%20Filter.png)
 
+### No Data Found  
+![No Data Found](ScreenShot/No%20Data%20Found.png)
+
+### Backend Fetch Error  
+![Backend Error](ScreenShot/Error.png)
+
 ---
 
 ## Technologies Used

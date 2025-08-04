@@ -1,6 +1,4 @@
-// /frontend/src/components/Footer.jsx
 import { Box, Typography } from '@mui/material';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Footer = () => {
   return (

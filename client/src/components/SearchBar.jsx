@@ -1,4 +1,3 @@
-// /frontend/src/components/SearchBar.jsx
 import { TextField, InputAdornment, IconButton, Box, Button } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';

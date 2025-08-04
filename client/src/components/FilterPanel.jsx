@@ -79,7 +79,7 @@ const FilterPanel = ({ filters, onFilterChange }) => {
             </Grid>
           </Grid>
 
-          {/* Reset Button */}
+          {/* Reset Button  */}
           <Box sx={{ mt: 3, textAlign: 'right' }}>
             <Button variant="outlined" color="secondary" onClick={handleReset}>
               Reset

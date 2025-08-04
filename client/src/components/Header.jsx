@@ -1,4 +1,3 @@
-// /frontend/src/components/Header.jsx
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 

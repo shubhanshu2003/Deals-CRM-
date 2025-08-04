@@ -59,7 +59,6 @@ function App() {
 
   useEffect(() => {
     fetchDeals();
-    // eslint-disable-next-line
   }, [filters]);
 
   // Use debounce to update filters.q after user stops typing for 300ms
