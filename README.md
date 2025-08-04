@@ -12,6 +12,14 @@ This is a full-stack web application for managing sales deals, enabling users to
 
 ---
 
+## Code Deployment Link
+
+You can access the live application using the following links:  
+
+  [https://deals-crm-vert.vercel.app/](https://deals-crm-vert.vercel.app/)  
+ 
+---
+
 ## Screenshot Gallery
 
 ### Frontend Main View
@@ -190,50 +198,3 @@ Seed the database with sample deals for testing:
 
 ---
 
-## Folder Structure
-
-/client
-├── dist
-├── node_modules
-├── public
-├── src
-│   ├── assets
-│   ├── components
-│   │   ├── DealsList.jsx
-│   │   ├── FilterPanel.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   └── SearchBar.jsx
-│   ├── App.css
-│   ├── App.jsx
-│   ├── index.css
-│   ├── main.jsx
-├── .env
-├── .gitignore
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-└── vite.config.js
-
-/server
-├── node_modules
-├── prisma
-├── src
-├── .env
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
-
-/ScreenShot
-├── Company Name Filter.png
-├── Contact Name Filter.png
-├── Deals Name Filter.png
-├── filter.png
-├── frontend.png
-├── In Progress Filter.png
-├── Lost Filter.png
-├── Min and Max Filter.png
-├── New Filter.png
-└── Won Filter.png
